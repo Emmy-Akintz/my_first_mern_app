@@ -2,7 +2,7 @@ import React, { createContext } from 'react'
 
 export const WorkoutsContext = createContext()
 
-export const WorkoutsContextProvider = () => {
+export const WorkoutsContextProvider = ({ children }) => {
 
     return (
         <WorkoutsContext.Provider>
