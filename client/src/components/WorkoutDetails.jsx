@@ -3,7 +3,7 @@ import { useWorkoutsContext } from '../hooks/useWorkoutsContext'
 import '../index.css'
 
 function WorkoutDetails({ workout }) {
-  const { dispatch} = useWorkoutsContext()
+  const { dispatch } = useWorkoutsContext()
 
   const handleClick = async () => {
     const response = await fetch('http://localhost:4000/api/workouts/' + workout._id, {
@@ -12,7 +12,7 @@ function WorkoutDetails({ workout }) {
     const json = await response.json()
 
     if (response.ok) {
-
+      dispatch({type: 'DELETE_WORKOUT', payload: json})
     }
   }
 
