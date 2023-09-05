@@ -10,10 +10,3 @@ export const useWorkoutsContext = () => {
 
     return context
 }
-// function useWorkoutsContext() {
-//   return (
-//     <div>useWorkoutsContext</div>
-//   )
-// }
-
-// export default useWorkoutsContext

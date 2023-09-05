@@ -32,11 +32,3 @@ export const WorkoutsContextProvider = ({ children }) => {
     </WorkoutsContext.Provider>
   )
 }
-
-// function WorkoutContext() {
-//   return (
-//     <div>WorkoutContext</div>
-//   )
-// }
-
-// export default WorkoutContext

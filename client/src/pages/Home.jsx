@@ -24,7 +24,7 @@ function Home() {
     // axios.get('http://localhost:4000/api/workouts/')
     // .then(result => setWorkouts(result.data))
     // .catch(err => console.log(err))
-  }, [])
+  }, [dispatch])
 
   return (
     <div className='home'>
