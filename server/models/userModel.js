@@ -16,6 +16,8 @@ const userSchema = new Schema({
     }
 })
 
+// jwt.io
+
 // static signup method
 userSchema.statics.signup = async function(email, password) {
 
